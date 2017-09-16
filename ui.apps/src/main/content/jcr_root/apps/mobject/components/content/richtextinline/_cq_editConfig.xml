@@ -7,53 +7,66 @@
         editorType="text">
         <config jcr:primaryType="nt:unstructured">
             <rtePlugins jcr:primaryType="nt:unstructured">
-                <paraformat jcr:primaryType="nt:unstructured">
-                    <format jcr:primaryType="nt:unstructured">
-                        <p
-                            jcr:primaryType="nt:unstructured"
-                            description="This is Paragraph"
-                            tag="p"/>
-                        <h1
-                            jcr:primaryType="nt:unstructured"
-                            description="This is h1"
-                            tag="h1"/>
-                        <h2
-                            jcr:primaryType="nt:unstructured"
-                            description="This is h2"
-                            tag="h2"/>
-                        <h3
-                            jcr:primaryType="nt:unstructured"
-                            description="This is h3"
-                            tag="h3"/>
-                        <h4
-                            jcr:primaryType="nt:unstructured"
-                            description="This is h4"
-                            tag="h4"/>    
-                    </format>
-                </paraformat>
-                <misctools jcr:primaryType="nt:unstructured">
-                    <specialCharsConfig jcr:primaryType="nt:unstructured">
-                        <chars
-                            jcr:primaryType="nt:unstructured"
-                            entity="&amp;#8482;">
-                            <pound
-                                jcr:primaryType="nt:unstructured"
-                                entity="&amp;#163;"/>
-                            <nbsp
-                                jcr:primaryType="nt:unstructured"
-                                entity="&amp;#160;"/>
-                            <registered
-                                jcr:primaryType="nt:unstructured"
-                                entity="&amp;#174;"/>
-                            <copyright
-                                jcr:primaryType="nt:unstructured"
-                                entity="&amp;#169;"/>
-                            <emDash
-                                jcr:primaryType="nt:unstructured"
-                                entity="&amp;#8212;"/>
-                        </chars>
-                    </specialCharsConfig>
-                </misctools>
+                <paraformat
+			    	jcr:primaryType="nt:unstructured"
+			        features="*">
+			        <format jcr:primaryType="nt:unstructured">
+			        	<p
+			            	jcr:primaryType="nt:unstructured"
+			                description="This is my Paragraph"
+			                tag="p"/>
+			             <h1
+			             	jcr:primaryType="nt:unstructured"
+			                description="Header 1"
+			                tag="h1"/>
+			             <h2
+			                  jcr:primaryType="nt:unstructured"
+			                  description="Header 2"
+			                  tag="h2"/>
+			              <h3
+			                  jcr:primaryType="nt:unstructured"
+			                  description="Header 3"
+			                  tag="h3"/>
+			               <h4
+			                  jcr:primaryType="nt:unstructured"
+			                  description="Header 4"
+			                  tag="h4"/>
+			               <h5
+			                  jcr:primaryType="nt:unstructured"
+			                  description="Header 5"
+			                  tag="h5"/>
+			               <h6
+			                  jcr:primaryType="nt:unstructured"
+			                  description="Header 6"
+			                  tag="h6"/>         
+			           </format>
+			        </paraformat>
+	               <misctools
+	                    jcr:primaryType="nt:unstructured"
+	                    features="*">
+	                    <specialCharsConfig jcr:primaryType="nt:unstructured">
+	                        <chars jcr:primaryType="nt:unstructured">
+	                            <copyright
+	                                jcr:primaryType="nt:unstructured"
+	                                entity="&amp;#169;"/>
+	                            <trademark
+	                                jcr:primaryType="nt:unstructured"
+	                                entity="&amp;#8482;"/>
+	                            <registered
+	                                jcr:primaryType="nt:unstructured"
+	                                entity="&amp;#174;"/>
+	                            <emDash
+	                                jcr:primaryType="nt:unstructured"
+	                                entity="&amp;#8212;"/>
+	                            <pound
+	                                jcr:primaryType="nt:unstructured"
+	                                entity="&amp;#163;"/>
+	                            <nbsp
+	                                jcr:primaryType="nt:unstructured"
+	                                entity="&amp;#160;"/>
+	                        </chars>
+	                    </specialCharsConfig>
+	                </misctools>
                 <edit
                     jcr:primaryType="nt:unstructured"
                     defaultPasteMode="plaintext"
